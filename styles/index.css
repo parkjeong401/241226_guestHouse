@@ -1,184 +1,87 @@
 header {
-    width:1920px; margin:0 auto;
+    width:1920px; 
+    margin:0 auto;
 }
-header .top {
-    display:flex;
-    flex-flow:row nowrap;
-    justify-content:space-between;
-    align-items:center;
-}
-header .top .lnb{
-    width:1262px;
-}
+header .top {}
+header .top .lnb{}
 header .top .lnb h1 {
     float: left;
 }
 header .top .lnb h1 a {}
 header .top .lnb h1 a img {}
-header .top .nav {
-    display:flex;
-    flex-flow:row nowrap;
-    float:right;
-    padding:35px 0;
+header .top .lnb .nav {
+    float:right; padding:37px 0;
 }
-header .top .nav ul {
-    display:flex;
+header .top .lnb .nav ul {
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
 }
-header .top .nav ul li {
-    margin-right:15px;
-}
-header .top .nav ul li:first-child {
-    border-bottom:1px solid #FD8282;
-}
-header .top .nav ul li a {
+header .top .lnb .nav ul li {
+    margin:0 16.5px;
     font-size:1.25rem; font-weight:700; letter-spacing:-0.02em; 
 }
-header .bnr {
+header .top .lnb .nav ul li:first-child {border-bottom:1px solid #FD8282;}
+header .top .lnb .nav ul li a {}
+header .top .bnr {
     background-image:url(../images/ad.jpg);
-    background-size:cover;
-    background-position:center;
-    height:753px;
+    height:763px;
     text-align:center;
-    padding-top:137px;
+    padding-top:113px;
 }
-header .bnr h1 {
-    margin-bottom:15px;
+header .top .bnr h1 {
+    margin-bottom: 15px;
     font-size:3.75rem; font-weight:700; letter-spacing:-0.02em;
     color:#fff;
 }
-header .bnr span {
-    font-size:1.25rem; font-weight:500;
-    letter-spacing:-0.03em; line-height:1.3;
+header .top .bnr span {
+    font-size:1.56rem; font-weight:500; letter-spacing:-0.02em; 
     color:#fff;
 }
-header .bnr .move {
-    margin-top:15px;
+header .top .bnr .move {
+    margin:15px 0;
 }
-header .bnr .move a {}
-header .bnr .move a img {}
-
+header .top .bnr .move a {}
+header .top .bnr .move a img {}
+main {text-align:center;}
 /*==========================객실소개 */
 main .room {
     background-color:aqua;
-    margin:0 auto;
-    width:1262px;
 }
-main .room .contents {
-    display:flex; flex-flow:row nowrap;
-    justify-content:space-between;
-    align-items:center;
-}
-main .room .contents h2 {
-    font-size:1.88rem; font-weight:700; 
-    letter-spacing:-0.03em; line-height:1.2;
-    color:#121212;
-}
-main .room .contents span {
-    font-size:1.25rem; font-weight:500; letter-spacing:-0.03em; line-height:1.3;
-}
-main .room .contents .more_btn {
-    background-image:url(../images/arrow_forward_ios.png);
-    background-repeat:no-repeat;
-    background-position:right center;
-    background-color:#f2f2f2;
-    width:102px; height:43px;
-    border:1px solid #000; 
-    border-radius:3px;
-}
-main .content {
-    text-align:center;
-}
-main .content .image {
-    position:relative;
-    margin-top:72px;
-}   
-main .content .image span {
-    display:block;
-    font-size:1.56rem; font-weight:500; letter-spacing:-0.02em;
-}
-main .content .image span img {
-    max-width:100%; height:0 auto;
-}
-main .content .image .description {
-    position:absolute; top:0; left:0;
-}
-main .content .image .description p {}
-main .content .image .description a {position:absolute; top:50px;}
-main .content .image .description .left {left:10px;}
-main .content .image .description .right {right:10px;}
-main .content .image .img {}
+main .room contents {}
+main .room contents h2 {}
+main .room contents .more_btn {}
+main .room .content {}
+main .room .content span {}
+main .room .content span img {}
+main .room .content p {}
+main .room .content img {}
 /* ===========================주변여행지 소개*/
-main .travel {
-    background-color:lime;
-    margin:0 auto;
-    width:1262px;
-    padding-top:60px;
-}
-main .travel .contents {
-    display:flex; flex-flow:row nowrap;
-    justify-content:space-between;
-    align-items:center;
-}
-main .travel .contents h2 {
-    font-size:1.88rem; font-weight:700; 
-    letter-spacing:-0.03em; line-height:1.2;
-    color:#121212;
-}
-main .travel .contents .more_btn {
-    background-image:url(../images/arrow_forward_ios.png);
-    background-repeat:no-repeat;
-    background-position:right center;
-    background-color:#f2f2f2;
-    width:102px; height:43px;
-    border:1px solid #000; 
-    border-radius:3px;
-}
-main .travel .content {
-    display:flex; flex-flow:row nowrap;
-    margin-right:0 10px;
-    padding-top:80px;
-}
-main .travel .content span {
-    text-align:center;
-    font-size:1.56rem; font-weight:500; letter-spacing:-0.02em;
-}
+main .travel {background-color:lime;}
+main .travel .contents {}
+main .travel .contents h2 {}
+main .travel .contents .more_btn {}
+main .travel .content {}
+main .travel .content span {}
 main .travel .content span img {}
-main .travel .content p {
-    display:flex; flex-flow:column nowrap;
-    font-size:1.13rem; font-weight:400; 
-    letter-spacing:-0.03em; line-height:1.3;
-    margin-top:27px;
-}
+main .travel .content span img:first-child {}
+main .travel .content span img:nth-child(2) {}
+main .travel .content span img:last-child {}
+main .travel .content span p {}
 /* =========================오시는길 */
-main .traffic {}
-main .traffic .contents {background-color: aqua;}
+main .traffic {background-color:yellow;}
+main .traffic .contents {}
 main .traffic .contents ul {}
 main .traffic .contents ul li {}
 main .traffic .contents ul li h2 {}
 main .traffic .contents ul li img {}
 main .traffic .contents ul li span {}
 /* ======================하단배너 */
-main .bottom_bnr {
-    background-image:url(../images/bnr_photo.jpg);
-    color:#fff;
-    text-align:center;
-    padding:243px;
-    font-size:3.13rem; font-weight:500; 
-    letter-spacing:-0.03em; line-height:1.3;
-}
+main .bottom_bnr {background-color:coral;}
 main .bottom_bnr span {}
 /* ======================정보 */
-footer {
-    padding:70px;
-}
-footer .info {
-    display:block;
-}
-footer .info .contents {
-    text-align:center;
-    font-size:1.13rem; 
-    letter-spacing:-0.03em; line-height:1.3;
-}
+footer {}
+footer .info {background-color:lightgray;}
+footer .info .contents {}
 footer .info .contents address {}
 footer .info .contents em {}
 footer .info .contents span {}
